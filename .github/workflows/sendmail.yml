@@ -7,12 +7,13 @@ jobs:
 
         steps:
         - name: print Ish
-          run: echo "hello world"
+          run: echo "hello Ish"
         - name: Sending a mail
           if: ${{ always() }}
+
           uses: devellany/send-mailer@v1.0.2
           with:
-            host: smtp.google.com
+            host: smtp.gmail.com
             port: 465
             account: ${{secrets.ACCOUNT}}
             password: ${{secrets.MAIL_PASSWORD}}
@@ -20,7 +21,7 @@ jobs:
             from: ${{secrets.MAIL_ADDRESS}}
             to: sridevibala036@gmail.com
             subject: mail title.
-            body: your messages.
+            body: This is a mail 
 
 
         
