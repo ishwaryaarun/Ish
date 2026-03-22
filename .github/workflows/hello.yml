@@ -1,0 +1,10 @@
+name: Hello
+on: push
+
+jobs:
+  hello:
+    runs-on: windows-2025
+
+    steps:
+      - name: Print hello world
+      run: echo "hello Ish"
