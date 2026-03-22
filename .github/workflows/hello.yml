@@ -7,4 +7,4 @@ jobs:
 
     steps:
       - name: Print hello world
-      run: echo "hello Ish"
+      run: echo "hello World"
