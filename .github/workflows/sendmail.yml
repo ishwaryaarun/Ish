@@ -20,6 +20,7 @@ jobs:
             password: ${{ secrets.MAIL_PASSWORD }}
             subject: mail title
             body: This is a mail to Ish!
+            message: Trying to import the yml file 
             to: sridevibala036@gmail.com
             from: ${{ secrets.ACCOUNT }}
 
