@@ -11,7 +11,7 @@ jobs:
         - name: Sending a mail
           if: ${{ always() }}
 
-          uses: coumarane/send-mail-action@v1.1.2
+          uses: devellany/send-mailer@v1.0.2
           with:
             account: ${{secrets.ACCOUNT}}
             password: ${{secrets.MAIL_PASSWORD}}
