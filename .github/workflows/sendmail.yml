@@ -13,16 +13,14 @@ jobs:
 
           uses: dawidd6/action-send-mail@v3
           with:
-            host: smtp.google.com
-      # Optional port (defaults to 465)
-            port: 465
-            account: ${{secrets.ACCOUNT}}
-            password: ${{secrets.MAIL_PASSWORD}}
-            sender: Ishwarya 
-            from: ${{secrets.MAIL_ADDRESS}}
+            server_address: smtp.gmail.com
+            server_port: 465
+            secure: true
+            username: ${{ secrets.ACCOUNT }}
+            password: ${{ secrets.MAIL_PASSWORD }}
+            subject: mail title
+            body: This is a mail to Ish!
             to: sridevibala036@gmail.com
-            subject: mail title.
-            body: This is a mail to Ish! 
-
+            from: ${{ secrets.MAIL_ADDRESS }}
 
         
