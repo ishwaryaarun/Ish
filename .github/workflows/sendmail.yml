@@ -13,11 +13,9 @@ jobs:
 
           uses: coumarane/send-mail-action@v1.1.2
           with:
-            host: smtp.gmail.com
-            port: 465
             account: ${{secrets.ACCOUNT}}
             password: ${{secrets.MAIL_PASSWORD}}
-            sender: devellany
+            sender: Ishwarya 
             from: ${{secrets.MAIL_ADDRESS}}
             to: sridevibala036@gmail.com
             subject: mail title.
