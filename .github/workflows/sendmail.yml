@@ -11,7 +11,7 @@ jobs:
         - name: Sending a mail
           if: ${{ always() }}
 
-          uses: devellany/send-mailer@v1.0.2
+          uses: coumarane/send-mail-action@v1.1.2
           with:
             host: smtp.gmail.com
             port: 465
@@ -21,7 +21,7 @@ jobs:
             from: ${{secrets.MAIL_ADDRESS}}
             to: sridevibala036@gmail.com
             subject: mail title.
-            body: This is a mail 
+            body: This is a mail to Ish! 
 
 
         
