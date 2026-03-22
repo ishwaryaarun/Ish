@@ -1,0 +1,2 @@
+name: Run Hello-world from py script
+on: push
