@@ -21,6 +21,6 @@ jobs:
             subject: mail title
             body: This is a mail to Ish!
             to: sridevibala036@gmail.com
-            from: ${{ secrets.MAIL_ADDRESS }}
+            from: ${{ secrets.ACCOUNT }}
 
         
